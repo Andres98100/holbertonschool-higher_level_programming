@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-for i in range(0, 100):
-    if i == 99:
-        print(i, end=", ")
-    if (i / 10 and i % 10 == 0) == i:
+for i in range(10):
+    for j in range(i + 1, 10):
+        print("{}{}".format(i, j), end=", ")
+        if i == 8:
+            print("{}{}".format(i, j))
+            
         
