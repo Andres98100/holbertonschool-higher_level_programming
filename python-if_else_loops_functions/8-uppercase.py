@@ -4,3 +4,7 @@ def uppercase(str):
         str -= 32
     print("{}".format(str))
     return str
+def main():
+    uppercase("best")
+    uppercase("Best School 98 Battery street")
+main()
