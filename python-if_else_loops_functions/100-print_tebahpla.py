@@ -5,4 +5,3 @@ for i in range(122, 97 -1, -1):
     elif i % 3 == 0:
         i
     print("{}".format(chr(i)), end="")
-    
