@@ -3,6 +3,7 @@
 from sys import argv
 argv = argv[1:]
 if __name__ == "__main__":
-    for result in argv:
-        result += int(argv)
-        print(result)
+    result = 0
+    for i in argv:
+        result += int(i)
+    print(result)
