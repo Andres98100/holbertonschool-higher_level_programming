@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    result = dict(map(lambda x: (x[0], max(x[1])), a_dictionary.items()))
-    return result
+    if not a_dictionary:
+        return None
+    return max(a_dictionary.keys())
