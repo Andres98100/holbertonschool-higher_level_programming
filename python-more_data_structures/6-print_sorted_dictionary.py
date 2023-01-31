@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
+    if a_dictionary == {}:
+        return
     new_key = a_dictionary.keys()
     new_sorted = sorted(new_key)
     new_dictionary = {}
