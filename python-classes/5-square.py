@@ -30,6 +30,7 @@ class Square:
         if self.__size == 0:
             print("")
         else:
-            '''is iterated size times and then multiplied by the size to create the'''
+            '''is iterated size times and then 
+            multiplied by the size to create the'''
             for i in range(self.__size):
                 print("#" * self.__size)
