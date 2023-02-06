@@ -4,7 +4,7 @@
 
 class Square:
     '''a private instance is made to an attribute with the name size'''
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         self.__size = size
         '''raise an error if the data type is incorrect'''
         if not isinstance(size, int):
