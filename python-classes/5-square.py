@@ -2,7 +2,6 @@
 '''a class called square is initialized'''
 
 
-
 class Square:
     '''a private instance is made to an attribute with the name size'''
     def __init__(self, size=0):
