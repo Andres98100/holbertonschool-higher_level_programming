@@ -4,11 +4,13 @@
 
 class Square:
     '''a private instance is made to an attribute with the name size'''
-    def __init__(self, size):
+    def __init__(self, size=0):
         self.__size = size
     '''private instance of the attribute is returned'''
+    @property
     def get_size(self):
         return self.__size
+    @get_size.setter
     def size(self, value):
         '''raise an error if the data type is incorrect'''
         if not isinstance(value, int):
@@ -20,4 +22,4 @@ class Square:
         self.__size = value
     '''returns the current square area'''
     def area(self):
-        return self.__size * self.__size
+        return self.__size ** 2
