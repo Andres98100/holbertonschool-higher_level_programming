@@ -26,8 +26,10 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
+        '''if the size is equal to 0, an empty line is printed'''
         if self.__size == 0:
             print("")
         else:
+            '''is iterated size times and then multiplied by the size to create the'''
             for i in range(self.__size):
                 print("#" * self.__size)
