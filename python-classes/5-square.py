@@ -11,6 +11,7 @@ class Square:
     @property
     def get_size(self):
         return self.__size
+
     @get_size.setter
     def size(self, value):
         '''raise an error if the data type is incorrect'''
