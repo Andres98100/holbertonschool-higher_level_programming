@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-'''
-an empty class is initialized
-'''
+'''an empty class called square is initialized'''
 class Square:
     pass
