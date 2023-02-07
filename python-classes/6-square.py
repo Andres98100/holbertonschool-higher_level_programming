@@ -26,16 +26,13 @@ class Square:
     @property
     def get_position(self):
         return self.__position
-    
+
     @get_position.setter
     def position(self, value):
-        '''raise an error if the data type is incorrect'''
         if not isinstance(value, tuple) or len(value) != 2 or \
-                not all(i >= 0 for i in value) and not isinstance(value, int):
+            not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-        '''is instantiated with the value'''
         self.__position = value
-    '''returns the current square area'''
     def area(self):
         return self.__size * self.__size
     def my_print(self):
@@ -49,4 +46,4 @@ class Square:
             for i in range(self.__position[1]):
                 print("")
             for i in range(self.__size):
-                print("_" * self.__position[0] + "#" * self.__size)
+                print(" " * self.__position[0] + "#" * self.__size)
