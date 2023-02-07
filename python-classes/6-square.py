@@ -5,41 +5,42 @@
 class Square:
     '''a private instance is made to an attribute with the name size'''
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
     '''private instance of the attribute is returned'''
     @property
-    def get_size(self):
-        return self.__size
-
-    @get_size.setter
+    def size(self):
+        return self._size
+    '''raise an error if the data type is incorrect'''
+    @size.setter
     def size(self, value):
-        '''raise an error if the data type is incorrect'''
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         '''raise an error if the data is less that 0'''
         if value < 0:
             raise ValueError("size must be >= 0")
         '''is instantiated with the value'''
-        self.__size = value
+        self._size = value
     '''private instance of the attribute is returned'''
     @property
-    def get_position(self):
-        return self.__position
-
-    @get_position.setter
+    def position(self):
+        return self._position
+    '''raise an error if the data type is incorrect'''
+    @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or \
-           not all(isinstance(i, int) and i >= 0 for i in value):
+        '''validates that position is a tuple and is a positive integer'''
+        if not isinstance(value, tuple) or len(value) != 2 or \
+           not all((i >= 0 for i in value) and isinstance(value, int)):
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = value
-
+        '''is instantiated with the value'''
+        self._position = value
+    '''returns the current square area'''
     def area(self):
-        return self.__size * self.__size
-
+        return self._size * self._size
+    '''the square is printed according to size '''
     def my_print(self):
         '''if the size is equal to 0, an empty line is printed'''
-        if self.__size == 0:
+        if self._size == 0:
             print("")
         else:
             '''the number of spaces sent to position 0 is printed'''
@@ -47,5 +48,5 @@ class Square:
             multiplied by the size to create the square'''
             for i in range(self.__position[1]):
                     print("")
-            for i in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+            for i in range(self._size):
+                print(" " * self._position[0] + "#" * self.__size)
