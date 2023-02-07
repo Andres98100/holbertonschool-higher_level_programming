@@ -37,7 +37,7 @@ test 7 one argument:
     99
 
 test 8 no arguments:
-    >>> add_integer()
+    >>> add_integer(None)
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
