@@ -6,4 +6,7 @@
 >>> add_integer(2.0, 3)
 5
 >>> add_integer("3", 3)
-TypeError("a must be an integer")
+Traceback (most recent call last):
+    File "./tests/0-add_integer.txt", line 8, in 0-add_integer.txt
+    result = add_integer("3", 3)
+TypeError: add_integer by string
