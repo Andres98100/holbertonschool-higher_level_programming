@@ -30,7 +30,7 @@ class Square:
     def position(self, value):
         '''validates that position is a tuple and is a positive integer'''
         if not isinstance(value, tuple) or len(value) != 2 or \
-           not all((i, int) and i >= 0 for i in value):
+           not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
         '''is instantiated with the value'''
         self._position = value
