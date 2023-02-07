@@ -30,11 +30,10 @@ class Square:
     @get_position.setter
     def position(self, value):
         '''raise an error if the data type is incorrect'''
-        if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+        if not isinstance(value, tuple) or len(value) != 2 or \
+                not all(i >= 0 for i in value) and not isinstance(value, int):
+            raise TypeError("position must be a tuple of 2 positive integers")
         '''is instantiated with the value'''
-        if value < 0:
-            raise ValueError("size must be >= 0")
         self.__position = value
     '''returns the current square area'''
     def area(self):
