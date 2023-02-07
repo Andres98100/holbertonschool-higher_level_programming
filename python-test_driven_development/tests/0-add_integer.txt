@@ -1,42 +1,42 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 
-test 1 Int number:
+test1 Int number:
     >>> add_integer(2, 3)
     5
 
-test 2 Float number:
+test2 Float number:
     >>> add_integer(2.0, 3)
     5
 
-test 3 String argument a:
+test3 String argument a:
     >>> add_integer("3", 3)
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
 
-test 4 String argument b:
+test4 String argument b:
     >>> add_integer(3, "3")
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
 
-test 5 Float overflow:
+test5 Float overflow:
     >>> add_integer(1, float('-inf'))
     Traceback (most recent call last):
     ...
     OverflowError: cannot convert float infinity to integer 
 
-test 6 float NaN to int:
+test6 float NaN to int:
     >>> add_integer(1, float('NaN'))
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float NaN to integer
 
-test 7 one argument:
+test7 one argument:
     >>> add_integer(1)
     99
 
-test 8 no arguments:
+test8 no arguments:
     >>> add_integer(None)
     Traceback (most recent call last):
     ...
