@@ -1,4 +1,4 @@
->>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer.py').add_integer
 test 1 Int number:
     >>> add_integer(2, 3)
     5
