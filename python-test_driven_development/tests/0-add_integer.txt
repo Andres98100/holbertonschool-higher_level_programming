@@ -1,2 +1,9 @@
-#!/usr/bin/python3
-add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(2, 3)
+5
+>>> add_integer(2.0, 3)
+5
+>>> add_integer("2", 3)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+'''
