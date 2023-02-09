@@ -8,8 +8,8 @@ def matrix_divided(matrix, div):
     if not all(list(map(lambda x: all(list(map(lambda num:
         isinstance(num, (int, float)), x))), matrix))):
         '''error of the matrix'''
-        raise TypeError("matrix must be a matrix\
-                        (list of lists) of integers/floats")
+        raise TypeError("matrix must be a matrix (list of lists) "
+                        "of integers/floats")
     elif not all(list(map(lambda x: len(x) == aux, matrix))):
         '''not it same size'''
         raise TypeError("Each row of the matrix must have the same size")
