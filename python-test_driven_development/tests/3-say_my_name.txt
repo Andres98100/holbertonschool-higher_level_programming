@@ -18,4 +18,4 @@ test3 No arguments:
 
 test4 one argument:
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
