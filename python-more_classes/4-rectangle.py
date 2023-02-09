@@ -5,8 +5,8 @@
 class Rectangle:
     '''method function'''
     def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
     '''decorator'''
     @property
     def get_width(self):
