@@ -5,10 +5,10 @@ test1 List of Lists of integers / div= integer:
     [[1.0, 2.0], [3.0, 4.0]]
 
 test2 List of Lists of integers / div=str:
-    >>> matrix_divided([[3, 9], [12, 15]], "2")
+    >>> matrix_divided([[1, 2], [3, 4]], "3")
     Traceback (most recent call last):
     ...
-    ZeroDivisionError: division by zero
+    TypeError: div must be a number
 
 test 3 List of Lists of integers / div=0:
     >>> matrix_divided([[3, 9], [12, 15]], 0)
