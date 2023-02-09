@@ -1,4 +1,4 @@
->>> add_integer = __import__('0-add_integer').add_integer
+matrix_divided = __import__('2-matrix_divided').matrix_divided
 
 test1 List of Lists of integers / div= integer:
     >>> matrix_divided([[2, 4], [6, 8]], 2)
