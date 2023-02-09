@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''class'''
+
+
 class Rectangle:
     '''method function'''
     def __init__(self, width=0, height=0):

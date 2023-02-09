@@ -2,7 +2,6 @@
 '''created class'''
 
 
-
 class Rectangle:
     '''class without instruction'''
     pass

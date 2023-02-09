@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''class'''
+
+
 class Rectangle:
     '''public attribute'''
     number_of_instances=0
