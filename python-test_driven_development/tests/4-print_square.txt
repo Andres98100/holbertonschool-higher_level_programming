@@ -1,0 +1,26 @@
+>>> print_square = __import__('4-print_square').print_square
+
+test1 int argument > 0:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+test2 string argument:
+    >>> print_square("4")
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
+test3 argument less that 0:
+    >>> print_square(-2)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be >= 0
+
+test4 no argument:
+    >>> print_square()
+    Traceback (most recent call last):
+    ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
