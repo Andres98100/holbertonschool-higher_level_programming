@@ -21,7 +21,7 @@ test4 one argument:
     My name is Bob 
 
 test5 firstname= string / lastname= not string:
-    >>> say_my_name("John", 12)
+    >>> say_my_name("Bob", 12)
     Traceback (most recent call last):
     ...
-    TypeError: first_name must be a string
+    TypeError: last_name must be a string
