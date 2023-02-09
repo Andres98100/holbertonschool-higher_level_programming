@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     aux = len(matrix[0])
     '''matrix is int or float'''
     if not all(list(map(lambda x: all(list(map(lambda num:
-                isinstance(num, (int, float)), x))), matrix))):
+               isinstance(num, (int, float)), x))), matrix))):
         '''error of the matrix'''
         raise TypeError("matrix must be a matrix (list of lists) "
                         "of integers/floats")
@@ -22,6 +22,6 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError("division by zero")
     '''operation matrix'''
     result = list(map(lambda x: list(map(lambda y:
-            round(y / div, 2), x)), matrix))
+                  round(y / div, 2), x)), matrix))
     '''return the result'''
     return result
