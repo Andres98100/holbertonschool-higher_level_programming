@@ -3,6 +3,7 @@
 
 
 def matrix_divided(matrix, div):
+    '''variable auxiliar'''
     aux = len(matrix[0])
     '''matrix is int or float'''
     if not all(list(map(lambda x: all(list(map(lambda num:

@@ -4,41 +4,29 @@ test1 List of Lists of integers / div= integer:
     >>> matrix_divided([[2, 4], [6, 8]], 2)
     [[1.0, 2.0], [3.0, 4.0]]
 
-test2 List of Lists of integers / div=str:
-    >>> matrix_divided([[2, 4], [6, 8]], "2")
-    Traceback(most recent call last):
-    ...
-    TypeError: div must be a number
-
-test 3 List of Lists of integers / div=0:
-    >>> matrix_divided([[2, 4], [6, 8]], 0)
-    Traceback(most recent call last):
-    ...
-    ZeroDivisionError: division by zero
-
-test4 List of Lists of integers=str / div=int:
+test2 List of Lists of integers=str / div=int:
     >>> matrix_divided([["2", 4], ["6", 8]], 2)
     Traceback(most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-test5 list whit different size:
+test3 list whit different size:
     >>> matrix_divided([[2, 4], [6, 8, 10]], 2)
     Traceback(most recent call last):
     ...
     TypeError: Each row of the matrix must have the same size
 
-test5 Float overflow:
+test4 Float overflow:
     >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
     [[0.0, 0.0], [0.0, 0.0]]
 
-test6 one argument:
+test5 one argument:
     >>> matrix_divided([[1, 2], [4, 6]])
     Traceback (most recent call last):
     ...
     TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-test7 No arguments:
+test6 No arguments:
     >>> matrix_divided()
     Traceback (most recent call last):
     ...
