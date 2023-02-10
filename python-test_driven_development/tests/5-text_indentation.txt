@@ -6,13 +6,13 @@ test1 not string:
     ...
     TypeError: text must be a string
 
-test3 missing one argument:
+test2 missing one argument:
     >>> text_indentation():
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-test5 text blank line:
+test4 text blank line:
     >>>text_indentation("hello\nworld\nholberton\nschool")
     hello.
     <BLANKLINE>
@@ -22,8 +22,14 @@ test5 text blank line:
     <BLANKLINE>
     school
 
-test4 text string:
-    >>> text_indentation("Holberton.School")
+test5 text string:
+    >>> text_indentation("")
+    <BLANKLINE>
+
+TEST6 CHARS:
+    >>> text_indentation("Holberton. school? cool")
     Holberton.
     <BLANKLINE>
-    School
+    school?
+    <BLANKLINE>
+    cool
