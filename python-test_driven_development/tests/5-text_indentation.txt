@@ -1,13 +1,13 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 test1 not string:
-    >>> text_indentation(40):
+    >>> text_indentation(40)
     Traceback (most recent call last):
     ...
     TypeError: text must be a string
 
 test2 missing one argument:
-    >>> text_indentation():
+    >>> text_indentation()
     Traceback (most recent call last):
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
