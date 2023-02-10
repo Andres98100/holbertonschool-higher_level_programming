@@ -1,11 +1,6 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-test1 text=int:
-    >>> text_indentation()
-    hello,
-    world
-
-test2 not string:
+test1 not string:
     >>> text_indentation(40):
     Traceback (most recent call last):
     ...
@@ -18,5 +13,17 @@ test3 missing one argument:
     TypeError: text must be a string
 
 test5 text blank line:
-    >>>text_indentation(" ")
+    >>>text_indentation("hello. world? holberton: school")
+    hello.
+    <BLANKLINE>
+    world?
+    <BLANKLINE>
+    holberton:
+    <BLANKLINE>
+    school
 
+test4 text string:
+    >>> text_indentation("Holberton.School")
+    Holberton.
+    <BLANKLINE>
+    School
