@@ -1,15 +1,21 @@
 #!/usr/bin/python3
+'''function print a text in new lines'''
+
+
 def text_indentation(text):
-    if not isinstance(text, str):
+    '''validation'''
+    if type(text) != str:
         raise TypeError("text must be a string")
-    new_text = []
+    '''chars'''
     char = [".", "?", ":"]
-    aux = ""
-    for i in text:
-        aux += i
-        if i in char:
-            new_text.append(aux)
-            aux = ""
-            print(aux)
-    for aux in new_text:
-        print(aux)
+    '''text iterates'''
+    prev = 0
+    for i in range(len(text)):
+        if i == len(text) - 1:
+            print(text[prev:i + 1], end="")
+        elif text[i] in char:
+            print(text[prev:i + 1], end="")
+            print('\n\n')
+            prev = i + 1
+            while text[prev] == " ":
+                prev += 1
