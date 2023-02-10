@@ -50,7 +50,7 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
     '''funtion str'''
     def __str__(self):
-        rectangle = "#"
+        rectangle = ""
         '''validation'''
         if self.__width == 0 or self.__height == 0:
             return rectangle
@@ -65,4 +65,4 @@ class Rectangle:
     '''function repr'''
     def __repr__(self):
         '''return new rectangle'''
-        return "Rectangle(%d%d)" % (self.__height, self.__width)
+        return "Rectangle(%d, %d)" % (self.__width, self.__height)
