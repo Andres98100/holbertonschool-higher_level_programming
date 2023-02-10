@@ -10,10 +10,10 @@ test3 missing one argument:
     >>> text_indentation():
     Traceback (most recent call last):
     ...
-    TypeError: text must be a string
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 test5 text blank line:
-    >>>text_indentation("hello. world? holberton: school")
+    >>>text_indentation("hello\nworld\nholberton\nschool")
     hello.
     <BLANKLINE>
     world?
