@@ -50,15 +50,15 @@ class Rectangle:
         return 2 * (self.__width + self.__height)
     '''funtion str'''
     def __str__(self):
-        rectangle = ""
+        rectangle = "#"
         '''validation'''
         if self.__width == 0 or self.__height == 0:
             return rectangle
         '''created of rectangle'''
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle += "#"
-            if i != self.__height - 1:
+                rectangle += rectangle
+            if i < self.__height - 1:
                 rectangle += '\n'
         '''return rectangle'''
         return rectangle

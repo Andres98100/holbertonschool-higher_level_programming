@@ -4,7 +4,7 @@
 
 class Rectangle:
     '''public attribute'''
-    number_of_instances=0
+    number_of_instances = 0
     '''method function'''
     def __init__(self, width=0, height=0):
         self.width = width
