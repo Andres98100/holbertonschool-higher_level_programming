@@ -12,19 +12,9 @@ test2 missing one argument:
     ...
     TypeError: text_indentation() missing 1 required positional argument: 'text'
 
-test4 text blank line:
-    >>>text_indentation("hello\nworld\nholberton\nschool")
-    hello.
-    <BLANKLINE>
-    world?
-    <BLANKLINE>
-    holberton:
-    <BLANKLINE>
-    school
-
 test5 text string:
-    >>> text_indentation("")
-    <BLANKLINE>
+    >>> text_indentation("Holberton hello")
+    Holberton hello
 
 TEST6 CHARS:
     >>> text_indentation("Holberton. school? cool")
