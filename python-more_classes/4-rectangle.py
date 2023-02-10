@@ -57,7 +57,7 @@ class Rectangle:
         '''created of rectangle'''
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle += rectangle
+                rectangle += "#"
             if i < self.__height - 1:
                 rectangle += '\n'
         '''return rectangle'''
