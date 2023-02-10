@@ -11,6 +11,7 @@ def text_indentation(text):
     '''text iterates'''
     prev = 0
     for i in range(len(text)):
+        '''validation'''
         if i == len(text) - 1:
             print(text[prev:i + 1], end="")
         elif text[i] in char:
