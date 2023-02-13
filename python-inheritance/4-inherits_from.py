@@ -4,8 +4,8 @@
 
 def inherits_from(obj, a_class):
     '''condition'''
-    if not isinstance(obj, a_class) and type(obj) is not a_class:
-        return False
+    if isinstance(obj, a_class) and type(obj) is not a_class:
+        return True
     else:
         '''return false or true'''
-        return True
+        return False
