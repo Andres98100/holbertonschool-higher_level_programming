@@ -4,9 +4,9 @@
 
 def is_same_class(obj, a_class):
     '''variable flag'''
-    flag = False
+    flag = True
     '''conditional'''
-    if isinstance(obj, a_class):
-        flag = True
+    if not isinstance(obj, a_class):
+        flag = False
     '''return false or true'''
     return flag
