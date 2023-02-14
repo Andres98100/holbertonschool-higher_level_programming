@@ -15,5 +15,6 @@ test2 empty:
     []
 
 test3 __str__:
+    >>> new_list = MyList()
     >>> print(str(new_list))
     [-1, 1, 2, 3]
