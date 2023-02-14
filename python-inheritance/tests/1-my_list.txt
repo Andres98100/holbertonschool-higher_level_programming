@@ -26,6 +26,7 @@ test5 number negative:
     [-1, 0, 2, 3]
 
 test6 new_list:
-    >>> new_list = [3, 2, 5, 1]
-    >>> print(new_list)
-    [3, 2, 5, 1]
+    >>> a = [1, 9, 4]
+    >>> my_list = MyList(a)
+    >>> my_list.print_sorted()
+    [1, 4, 9]
