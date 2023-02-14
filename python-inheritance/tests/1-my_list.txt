@@ -6,21 +6,21 @@ test1 empty:
     []
 
 test2 append:
-    >>> new_list = MyList()
-    >>> new_list.append(-1)
     >>> new_list.append(2)
     >>> new_list.append(3)
     >>> new_list.print_sorted()
-    [-1, 2, 3]
+    [2, 3]
 
 test3 __str__:
     >>> print(str(new_list))
-    [-1, 2, 3]
+    [2, 3]
 
 test 4 new list:
-    >>> new_list = MyList()
-    >>> new_list.append(1)
     >>> new_list.append(0)
-    >>> new_list.append(2)
     >>> new_list.print_sorted()
-    [0, 1, 2]
+    [0, 2, 3]
+
+test5 number negative:
+    >>> new_list.append(-1)
+    >>> new_list.print_sorted()
+    [-1, 0, 2, 3]
