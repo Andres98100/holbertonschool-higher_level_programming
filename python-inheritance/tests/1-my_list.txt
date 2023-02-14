@@ -11,10 +11,6 @@ test2 append:
     >>> my_list.print_sorted()
     [2, 3]
 
-test3 return list:
-    >>> print(my_list)
-    [2, 3]
-
 test4 __str__:
     >>> print(str(my_list))
     [2, 3]
@@ -23,6 +19,10 @@ test5 zero:
     >>> my_list.append(0)
     >>> my_list.print_sorted()
     [0, 2, 3]
+
+test3 return list:
+    >>> print(my_list)
+    [2, 3, 0]
 
 test6 number negative:
     >>> my_list.append(-1)
