@@ -5,14 +5,14 @@ test1 empty:
     >>> my_list.print_sorted()
     []
 
-test2 return list:
-    >>> print(my_list)
-    []
-
-test3 append:
+test2 append:
     >>> my_list.append(2)
     >>> my_list.append(3)
     >>> my_list.print_sorted()
+    [2, 3]
+
+test3 return list:
+    >>> print(my_list)
     [2, 3]
 
 test4 __str__:
