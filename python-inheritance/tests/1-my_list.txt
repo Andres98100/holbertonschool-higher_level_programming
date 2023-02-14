@@ -1,4 +1,17 @@
 >>> MyList = __import__('1-my_list').MyList
 
-test1 chack str:
-    >>> my_list()
+test1 append:
+    >>> MyList.append(-1)
+    >>> MyList.append(2)
+    >>> MyList.append(3)
+    >>> MyList.append(1)
+    >>> MyList.print_sorted()
+    [-1, 1, 2, 3]
+
+test2 empty:
+    >>> MyList()
+    []
+
+test3 __str__:
+    >>> print(str(MyList))
+    [-1, 1, 2, 3]
