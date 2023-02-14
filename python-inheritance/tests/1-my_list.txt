@@ -1,28 +1,28 @@
 >>> MyList = __import__('1-my_list').MyList
 
 test1 empty:
-    >>> new_list = MyList()
-    >>> new_list.print_sorted()
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
     []
 
 test2 append:
-    >>> new_list.append(2)
-    >>> new_list.append(3)
-    >>> new_list.print_sorted()
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.print_sorted()
     [2, 3]
 
 test3 __str__:
-    >>> print(str(new_list))
+    >>> print(str(my_list))
     [2, 3]
 
 test4 zero:
-    >>> new_list.append(0)
-    >>> new_list.print_sorted()
+    >>> my_list.append(0)
+    >>> my_list.print_sorted()
     [0, 2, 3]
 
 test5 number negative:
-    >>> new_list.append(-1)
-    >>> new_list.print_sorted()
+    >>> my_list.append(-1)
+    >>> my_list.print_sorted()
     [-1, 0, 2, 3]
 
 test6 new_list:
