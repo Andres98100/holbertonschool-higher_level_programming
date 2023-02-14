@@ -9,7 +9,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 class Square(Rectangle):
     '''method'''
     def __init__(self, size):
-        '''method super class'''
-        super().__init__(size, size)
         '''validator'''
         self.__size = self.integer_validator("size", size)
+        '''method super class'''
+        super().__init__(size, size)
