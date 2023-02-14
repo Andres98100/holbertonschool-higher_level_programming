@@ -1,17 +1,19 @@
 >>> MyList = __import__('1-my_list').MyList
 
 test1 append:
-    >>> MyList.append(-1)
-    >>> MyList.append(2)
-    >>> MyList.append(3)
-    >>> MyList.append(1)
-    >>> MyList.print_sorted()
+    >>> new_list = MyList.append()
+    >>> new_list.append(-1)
+    >>> new_list.append(2)
+    >>> new_list.append(3)
+    >>> new_list.append(1)
+    >>> new_list.print_sorted()
     [-1, 1, 2, 3]
 
 test2 empty:
-    >>> MyList()
+    >>> new_list = my_list()
+    >>> new_list.print_sorted()
     []
 
 test3 __str__:
-    >>> print(str(MyList))
+    >>> print(str(new_list))
     [-1, 1, 2, 3]
