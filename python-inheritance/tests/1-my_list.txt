@@ -18,9 +18,9 @@ test3 __str__:
     [-1, 2, 3]
 
 test 4 new list:
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.print_sorted()
-    [1, 2, 3]
+    >>> new_list = MyList()
+    >>> new_list.append(1)
+    >>> new_list.append(0)
+    >>> new_list.append(2)
+    >>> new_list.print_sorted()
+    [0, 1, 2]
