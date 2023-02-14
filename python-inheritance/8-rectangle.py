@@ -2,10 +2,8 @@
 '''class basegeometry'''
 
 
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 '''class rectangle inherits the class basegeometry'''
-
 
 
 class Rectangle(BaseGeometry):
