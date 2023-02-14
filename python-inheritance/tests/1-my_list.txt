@@ -15,7 +15,7 @@ test3 __str__:
     >>> print(str(new_list))
     [2, 3]
 
-test 4 new list:
+test4 zero:
     >>> new_list.append(0)
     >>> new_list.print_sorted()
     [0, 2, 3]
@@ -24,3 +24,8 @@ test5 number negative:
     >>> new_list.append(-1)
     >>> new_list.print_sorted()
     [-1, 0, 2, 3]
+
+test6 new_list:
+    >>> new_list = [3, 2, 5, 1]
+    >>> print(new_list)
+    [3, 2, 5, 1]
