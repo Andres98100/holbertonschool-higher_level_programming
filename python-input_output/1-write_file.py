@@ -4,7 +4,7 @@
 
 def write_file(filename="", text=""):
     '''statement'''
-    with open(filename, "a", encoding="utf-8") as file:
-        file.write
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write(text)
     '''return'''
     return len(text)
