@@ -30,3 +30,35 @@ test5 number equal to None:
     Traceback (most recent call last):
     ...
     TypeError: name must be an integer
+
+test6 area:
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+test7 int: 
+    >>> bg.integer_validator("name", 1)
+    1
+
+test8 no int:
+    >>> bg.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
+test9 number is to True:
+    >>> bg.integer_validator("age", True)
+    True
+
+test10 number is to list:
+    >>> bg.integer_validator("age", [3])
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
+test11 number is to tuple:
+    >>> bg.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
