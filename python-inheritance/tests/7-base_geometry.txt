@@ -1,1 +1,32 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+test1 No argument:
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+test2 one argument:
+    >>> bg.integer_validator("age")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+test3 number equal zero:
+    >>> bg.integer_validator("name", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: name must be greater than 0
+
+test4 number different to int:
+    >>> bg.integer_validator("name", "jhon")
+    Traceback (most recent call last):
+    ...
+    TypeError: name must be an integer
+
+test5 number equal to None:
+    >>> bg.integer_validator("name", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: name must be an integer
