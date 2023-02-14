@@ -4,9 +4,8 @@ import json
 '''function write in a jason'''
 
 
-
 def save_to_json_file(my_obj, filename):
     '''statement'''
     with open(filename, "w") as file:
-        '''return'''
-        return json.dumps(my_obj, file)
+        '''json'''
+        json.dumps(my_obj, file)
