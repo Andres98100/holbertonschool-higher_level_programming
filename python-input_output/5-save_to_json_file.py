@@ -8,4 +8,4 @@ def save_to_json_file(my_obj, filename):
     '''statement'''
     with open(filename, "w") as file:
         '''json'''
-        file.write(json.dumps(my_obj, file))
+        file.write(json.dumps(my_obj))
