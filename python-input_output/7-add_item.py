@@ -17,16 +17,16 @@ def add_list():
     '''variable'''
     obj_list = []
     '''validation'''
-    with open(filename, "w") as file:
-        if os.stat(filename).st_size == 0:
-            obj_list
-        elif os.path.exists(filename):
-            obj_list = load_from_json_file(filename)
-            
-        '''add args'''
-        obj_list.extend(args[1:])
-        '''save list'''
-        save_to_json_file(obj_list, filename)
+    with open(filename, "a") as file:
+        pass
+    if os.stat(filename).st_size == 0:
+        obj_list
+    elif os.path.exists(filename):
+        obj_list = load_from_json_file(filename)
+    '''add args'''
+    obj_list.extend(args[1:])
+    '''save list'''
+    save_to_json_file(obj_list, filename)
 '''function'''
 if __name__ == "__main__":
     add_list()
