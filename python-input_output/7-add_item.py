@@ -13,8 +13,11 @@ filename = "add_item.json"
 
 
 def add_list():
+    '''open json'''
     with open(filename, 'r') as f:
+        '''my list'''
         my_list = []
+        '''add my list'''
         my_list.extend(args[1:])
         save_to_json_file(my_list, filename)
         load_from_json_file(filename)
