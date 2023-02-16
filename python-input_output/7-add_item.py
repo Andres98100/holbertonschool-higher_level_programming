@@ -10,7 +10,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 '''variable'''
 args = sys.argv
 filename = 'add_item.json'
-
+'''function'''
 def add_list():
     '''variable'''
     obj_list = []
