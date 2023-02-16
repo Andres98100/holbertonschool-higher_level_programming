@@ -14,7 +14,7 @@ filename = 'add_item.json'
 def add_list():
     '''variable'''
     obj_list = []
-    '''validator'''
+    '''validation'''
     if os.stat(filename).st_size == 0:
         obj_list
     elif os.path.exists(filename):
@@ -25,4 +25,5 @@ def add_list():
     '''save list'''
     save_to_json_file(obj_list, filename)
 '''function'''
-add_list()
+if __name__ == "__main__":
+    add_list()
