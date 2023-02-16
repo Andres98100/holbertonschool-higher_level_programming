@@ -19,5 +19,5 @@ def add_list():
     '''add args'''
     obj_list.extend(args[1:])
     save_to_json_file(obj_list, filename)
-
+'''function'''
 add_list()
