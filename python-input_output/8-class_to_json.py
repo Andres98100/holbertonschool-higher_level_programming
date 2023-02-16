@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-'''import'''
-import json
 '''function return dict'''
 
 
