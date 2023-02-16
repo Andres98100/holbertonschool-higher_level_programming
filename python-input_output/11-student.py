@@ -26,6 +26,5 @@ class Student:
         '''validation'''
         if json:
             new_dict = self.__dict__
-        '''iterates the attr'''
-        for i in new_dict.keys():
-            new_dict[i] = json[i]
+            for i in new_dict.keys():
+                new_dict[i] = json[i]
