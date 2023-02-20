@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''import'''
-Base = __import__('base').base
+from models.base import Base
 '''class'''
 
 
@@ -8,10 +8,10 @@ class Rectangle(Base):
     '''method'''
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
     '''decorators'''
     @property
     def width(self):
@@ -48,7 +48,7 @@ class Rectangle(Base):
         '''return'''
         return self.__y
     '''decorators'''
-    @width.setter
-    def width(self, value):
+    @y.setter
+    def y(self, value):
         '''assignment'''
         self.__y = value
