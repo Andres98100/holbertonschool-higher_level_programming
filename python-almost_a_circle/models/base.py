@@ -8,7 +8,7 @@ class Base:
     '''method constructor'''
     def __init__(self, id=None):
         '''conditional'''
-        if not id is None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
