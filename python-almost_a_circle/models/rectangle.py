@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''import'''
-Base = __import__('base').Base
+Base = __import__('base').base
 '''class'''
 
 
