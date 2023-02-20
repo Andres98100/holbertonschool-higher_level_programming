@@ -77,7 +77,7 @@ class Rectangle(Base):
     def area(self):
         '''return'''
         return self.__width * self.__height
-    
+
     '''method display'''
     def display(self):
         '''diplay Rectangle'''
@@ -88,4 +88,5 @@ class Rectangle(Base):
     def __str__(self):
         '''return'''
         return ("[Rectangle] ({}) {}/{} - {}/{}"
-                .format(self.id, self.__x, self.__y, self.__width, self.__height))
+                .format(self.id, self.__x, self.__y, 
+                        self.__width, self.__height))
