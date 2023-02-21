@@ -7,14 +7,14 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     '''method init'''
     def __init__(self, size, x=0, y=0, id=None):
+        self.size = size
         '''method super'''
         super().__init__(size, size, x, y, id)
-        self.size = size
 
     @property
     def size(self):
         '''return'''
-        return self.__width
+        return self.__size
 
     @size.setter
     def size(self, value):
