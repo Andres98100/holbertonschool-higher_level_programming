@@ -7,7 +7,6 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     '''method init'''
     def __init__(self, size, x=0, y=0, id=None):
-        self.size = size
         '''method super'''
         super().__init__(size, size, x, y, id)
 
