@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''import'''
 import json
+import os.path
 '''class'''
 
 
@@ -58,3 +59,18 @@ class Base:
         '''Return'''
         obj.update(**dictionary)
         return obj
+
+    @classmethod
+    def load_from_file(cls):
+        '''variable'''
+        filename = cls.__name__ + ".json"
+        '''validation'''
+        if not os.path.exists(filename):
+            return []
+        '''open file json'''
+        with open(filename, "r") as file:
+            obj = Base.from_json_string(file.read())
+        '''method create'''
+        new_list = [cls.create(**dic) for dic in obj]
+        '''return'''
+        return new_list
