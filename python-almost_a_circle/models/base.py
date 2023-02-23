@@ -52,10 +52,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
-            obj = cls(1, 1)
+            obj = cls(1, 1, 1)
             obj.update(cls, **dictionary)
             return obj
         elif cls.__name__ == "Square":
-            obj = cls(1, 1)
+            obj = cls(1, 1, 1)
             obj.update(cls, **dictionary)
             return obj
