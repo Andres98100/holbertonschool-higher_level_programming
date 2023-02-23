@@ -55,3 +55,7 @@ class Base:
             obj = cls(1, 1)
             obj.update(cls, **dictionary)
             return obj
+        elif cls.__name__ == "Square":
+            obj = cls(1, 1)
+            obj.update(cls, **dictionary)
+            return obj
