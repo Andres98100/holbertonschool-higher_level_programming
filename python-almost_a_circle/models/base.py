@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''import'''
 import json
-import os.path
 '''class'''
 
 
@@ -51,11 +50,11 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        ''' instance'''
         if cls.__name__ == "Rectangle":
-            obj = cls(1, 1, 1)
-            obj.update(cls, **dictionary)
-            return obj
+            obj = cls(1, 1)
         elif cls.__name__ == "Square":
-            obj = cls(1, 1, 1)
-            obj.update(cls, **dictionary)
-            return obj
+            obj = cls(1)
+        '''Return'''
+        obj.update(**dictionary)
+        return obj
