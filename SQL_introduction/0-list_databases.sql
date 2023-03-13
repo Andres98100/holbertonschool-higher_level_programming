@@ -1,2 +1,3 @@
 #!/bin/bash
-SHOW DATABASE;
+-- displays the database
+SHOW DATABASES;
