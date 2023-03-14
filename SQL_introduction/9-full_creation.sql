@@ -1,4 +1,4 @@
--- 
+-- creates a new table with new values
     CREATE TABLE IF NOT EXISTS second_table(
         id INT,
         name VARCHAR(56),
