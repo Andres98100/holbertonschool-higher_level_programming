@@ -9,7 +9,7 @@ Base = declarative_base()
 
 class State(Base):
     """ table declaration """
-    __tablename__ = 'some_table'
+    __tablename__ = 'states'
     id = Column(Integer, primary_key = True,
                 unique = True, autoincrement=True, nullable=False)
     name = Column(String(128))
