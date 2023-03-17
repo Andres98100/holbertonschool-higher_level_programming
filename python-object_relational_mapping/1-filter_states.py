@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""
+all states with a name starting with N
+"""
 import MySQLdb
 import sys
-"""
-connect database to python
-"""
 
 
 if __name__ == "__main__":

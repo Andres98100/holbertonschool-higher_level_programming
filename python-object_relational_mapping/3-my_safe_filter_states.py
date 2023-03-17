@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+"""
+displays the values of the table passed as an argument
+"""
 import MySQLdb
 import sys
-"""
-connect database to python
-"""
 
 
 if __name__ == "__main__":
