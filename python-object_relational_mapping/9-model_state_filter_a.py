@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-show state with their id
+show all the state with 'a'
 """
 import sys
 from sqlalchemy import create_engine
