@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-create table
+create table state
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
