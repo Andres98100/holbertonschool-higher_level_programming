@@ -18,10 +18,12 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
+
     delete_state = session.query(State).filter(State.name.like('%a%')).all()
     for state in delete_state:
         session.delete(state)
 
+    session.commit()
     states = session.query(State).order_by(State.id).all()
     for state in states:
         print("{}: {}".format(state.id, state.name))
